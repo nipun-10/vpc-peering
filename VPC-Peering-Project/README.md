@@ -38,6 +38,9 @@ A **VPC Peering Connection** was created between these two VPCs to enable privat
 
 ---
 
+![VPC Peering GIF](https://raw.githubusercontent.com/nipun-10/vpc-peering/main/VPC-Peering-Project/vpc-peering-image.gif)
+
+vpc-peering-image.gif
 ## 🔄 **Project Flow / Steps Performed**
 
 ### **1️⃣ Create Two VPCs**
@@ -94,5 +97,6 @@ This confirms that **VPC Peering is working correctly**, and both instances are 
 - Private communication using VPC peering  
 - Testing network connectivity  
 - AWS networking fundamentals
+
 
 
