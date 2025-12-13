@@ -23,11 +23,12 @@ R – Result
 
 The architecture achieved strong network isolation, secure cross-tier communication, and clear monitoring visibility.
 This project deepened my understanding of AWS networking, security controls, and architecture patterns used in production systems.
----
 
 🏗️ **Architecture Overview**
 
-![VPC Peering GIF](images/vpc-peering-image.gif)
+<p align="center">
+  <img src="images/vpc-peering-image.gif" width="750">
+</p>
 
 Two VPCs were created **manually**:
 
@@ -165,6 +166,7 @@ Cloud & DevOps Enthusiast
 📌 GitHub: https://github.com/nipun-10
 
 ⭐ If you found this project helpful, consider giving the repository a star!
+
 
 
 
