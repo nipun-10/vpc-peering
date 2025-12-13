@@ -1,4 +1,4 @@
- 🚀 AWS VPC Peering Project (Manual Setup)
+ 🚀 Secure & Scalable 3-Tier Architecture with VPC Isolation & Peering
 
 📌 Project Overview
 This project demonstrates a real‑world AWS VPC Peering implementation used to securely connect two isolated Virtual Private Clouds (VPCs) in a 3‑tier architecture. The setup enables private communication between EC2 instances across VPCs without using the public internet, following AWS best practices for networking, routing, and security.
@@ -25,6 +25,8 @@ The architecture achieved strong network isolation, secure cross-tier communicat
 This project deepened my understanding of AWS networking, security controls, and architecture patterns used in production systems.
 
 🏗️ **Architecture Overview**
+
+## VPC Peering – Traffic Flow (Animated)
 
 <p align="center">
   <img src="images/vpc-peering-image.gif" width="750">
@@ -67,6 +69,7 @@ A **VPC Peering Connection** was created between these two VPCs to enable privat
  **1️⃣ Create Two VPCs**
 - VPC-A (10.0.0.0/16)  
 - VPC-B (192.168.0.0/16)
+  
 ![VPC Architecture](VPC.jpg)
 
  **2️⃣ Create Subnets**
@@ -80,6 +83,7 @@ A **VPC Peering Connection** was created between these two VPCs to enable privat
 **4️⃣ Configure Route Tables**
 - Associate subnets with their respective route tables  
 - Add route `0.0.0.0/0` → IGW for internet access
+  
 ![Route Table](route_table.jpg)
 
  **5️⃣ Launch EC2 Instances**
@@ -87,6 +91,7 @@ A **VPC Peering Connection** was created between these two VPCs to enable privat
 - One EC2 instance in VPC-B  
 - Allow SSH (port 22)  
 - Allow ICMP (ping)
+  
 ![EC2 Instances](instances.jpg)
 
 **6️⃣ Create VPC Peering Connection**
@@ -94,7 +99,8 @@ A **VPC Peering Connection** was created between these two VPCs to enable privat
 - Accepter: VPC-B  
 - Accept the peering request  
 - Check that status becomes **Active**
-![EC2 Instances](instances.jpg)
+  
+![VPC Peering](peering.jpg)
 
 **7️⃣ Update Route Tables for Peering**
 - In VPC-A Routes → Add route to `192.168.0.0/16` via Peering ID  
@@ -166,6 +172,7 @@ Cloud & DevOps Enthusiast
 📌 GitHub: https://github.com/nipun-10
 
 ⭐ If you found this project helpful, consider giving the repository a star!
+
 
 
 
